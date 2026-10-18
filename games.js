@@ -1,0 +1,68 @@
+// The single source of the game list. Adding a game is one entry here plus a
+// 16:9 PNG in thumbs/. `node scripts/check.mjs` verifies every field and link.
+window.GAMES = [
+  {
+    id: "snake",
+    name: "Snake",
+    description: "Eat, grow, and don't bite your own tail.",
+    play: "https://bborbe.github.io/snake/",
+    source: "https://github.com/bborbe/snake",
+    thumb: "thumbs/snake.png",
+  },
+  {
+    id: "pacman",
+    name: "Pac-Man",
+    description: "Classic arcade Pac-Man with a leaderboard and configurable difficulty.",
+    play: "https://bborbe.github.io/pacman/",
+    source: "https://github.com/bborbe/pacman",
+    thumb: "thumbs/pacman.png",
+  },
+  {
+    id: "tetrics",
+    name: "Tetris",
+    description: "Stack falling blocks, clear lines, chase the highscore.",
+    play: "https://bborbe.github.io/tetrics/",
+    source: "https://github.com/bborbe/tetrics",
+    thumb: "thumbs/tetrics.png",
+  },
+  {
+    id: "breakout",
+    name: "Breakout",
+    description: "Bounce the ball, break every brick, keep the paddle under it.",
+    play: "https://bborbe.github.io/breakout/",
+    source: "https://github.com/bborbe/breakout",
+    thumb: "thumbs/breakout.png",
+  },
+  {
+    id: "space-invaders",
+    name: "Space Invaders",
+    description: "Hold the line against wave after wave of invaders.",
+    play: "https://bborbe.github.io/space-invaders/",
+    source: "https://github.com/bborbe/space-invaders",
+    thumb: "thumbs/space-invaders.png",
+  },
+  {
+    id: "minesweeper",
+    name: "Minesweeper",
+    description: "Clear the board without hitting a mine — three difficulties.",
+    play: "https://bborbe.github.io/minesweeper/",
+    source: "https://github.com/bborbe/minesweeper",
+    thumb: "thumbs/minesweeper.png",
+  },
+  {
+    id: "sudoku",
+    name: "Sudoku",
+    description: "Unique puzzles from 4×4 to 25×25, with notes, hints and undo.",
+    play: "https://bborbe.github.io/sudoku/",
+    source: "https://github.com/bborbe/sudoku",
+    thumb: "thumbs/sudoku.png",
+  },
+  {
+    id: "driftline",
+    name: "Driftline",
+    description: "A Trackmania-like 3D racer in the browser — three.js and WebGPU.",
+    play: "https://bborbe.github.io/driftline/",
+    source: "https://github.com/bborbe/driftline",
+    thumb: "thumbs/driftline.png",
+  },
+];
