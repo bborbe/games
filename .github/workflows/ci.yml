@@ -1,0 +1,28 @@
+name: CI
+
+# The required `test` check: every game entry is complete, every thumbnail
+# exists, and every Play / Source URL answers 2xx.
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check the games list and links
+        run: make test

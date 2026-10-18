@@ -1,0 +1,8 @@
+# Opts this repo into maintainer-bot behaviors. Read per-repo by the maintainer agents.
+release:
+  autoRelease: true
+  changelogRewrite: false
+prReviewer:
+  autoApprove: true
+autoMerge:
+  trivial: true
